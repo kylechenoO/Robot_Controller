@@ -11848,11 +11848,12 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>maze-id 1-1529504409
-[[0, 0, 0, 0, 0, 2, 3],
- [1, 2, 2, 2, 0, 2, 0],
- [2, 0, 0, 0, 0, 2, 0],
- [2, 2, 2, 2, 0, 0, 0]]
+<pre>maze-id 1-1529550049
+[[2, 2, 3, 0, 2, 0],
+ [1, 2, 2, 0, 2, 0],
+ [0, 0, 2, 0, 2, 0],
+ [2, 0, 2, 0, 0, 0],
+ [2, 0, 0, 0, 2, 0]]
 </pre>
 </div>
 </div>
@@ -11906,7 +11907,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>迷宫共有 4 行 7 列，第三行第六列的元素是 2
+<pre>迷宫共有 5 行 6 列，第三行第六列的元素是 0
 </pre>
 </div>
 </div>
@@ -11937,7 +11938,7 @@ div#notebook {
 <span class="n">number_of_barriers_row1</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span> <span class="n">x</span><span class="o">//</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">env_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">])</span>
 
 <span class="c1">#TODO 5计算模拟环境中，第三列的的障碍物个数。</span>
-<span class="n">number_of_barriers_col3</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span> <span class="n">x</span><span class="o">//</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">env_data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">])</span>
+<span class="n">number_of_barriers_col3</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">env_data</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">])</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;迷宫中，第一行共有&quot;</span><span class="p">,</span> <span class="n">number_of_barriers_row1</span><span class="p">,</span> <span class="s2">&quot;个障碍物，第三列共有&quot;</span><span class="p">,</span> <span class="n">number_of_barriers_col3</span><span class="p">,</span> <span class="s2">&quot;个障碍物。&quot;</span><span class="p">)</span>
 </pre></div>
@@ -11956,7 +11957,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>迷宫中，第一行共有 1 个障碍物，第三列共有 2 个障碍物。
+<pre>迷宫中，第一行共有 3 个障碍物，第三列共有 3 个障碍物。
 </pre>
 </div>
 </div>
@@ -12297,7 +12298,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>在第26个回合找到宝藏
+<pre>在第214个回合找到宝藏
 </pre>
 </div>
 </div>
